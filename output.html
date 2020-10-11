@@ -1,18 +1,172 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/jasonm23/markdown-css-themes/gh-pages/markdown.css"></link><body><h1>User Preferences Profiling - Pitch</h1>
-<h2>Motivation</h2>
-<p>As we’re moving to our second monetisation strategy - Audio Advertisement - we need to be able to know more about our listeners. </p>
-<p>So that we can target the users with the native Audio Advertisements better.</p>
-<p>For our advertisers we need to answer following questions: what topics our users are listening to? How many users listened to articles about cars this month? What are the users that are listening about summer vacation? </p>
-<h2>Solution</h2>
-<h3>Article-Level</h3>
-<p>Since we’re analysing the texts for <strong>Topics Classifier</strong>, we should store additional information about the articles.</p>
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="markdown-css-themes/screen.css"></link><body><h2>Introduction</h2>
+<p>Markdown is a markup language designed to be simple enough to let anyone write structured documents without the need of a visual editor</p>
+<p>I <strong>strongly</strong> encourage you to change the source of the various parts to see what happens (the output will change as you type)</p>
+<h2>Basic styles</h2>
+<p>With this markup you can obtain <em>simple emhpasis</em> (usually rendered in italic text), <strong>strong emphasis</strong> (usually rendered in bold text), <code>source code</code> text (usually rendered in monospaced text), or ~~strikethrough~~ text (usually rendered with a line through text).</p>
+<p>You may use also <em>this</em> or <strong>this</strong> notation to emphatize text, and you can use all them <em><strong><code>together</code></strong></em> (and you can mix <code>*</code> and <code>_</code> )</p>
+<p>If you look at the source code you may note that
+even 
+if 
+you 
+break 
+the 
+lines,
+the text is kept together
+in a single paragraph</p>
+<p>Paragraphs are delimited by blank lines, leading and trailing spaces are removed </p>
+<p>You may force a line break with two spaces<br />
+or with a <code>\</code><br />
+at the end of the line</p>
+<h2>Basic styles</h2>
+<p>With this markup you can obtain <em>simple emhpasis</em> (usually rendered in italic text), <strong>strong emphasis</strong> (usually rendered in bold text), <code>source code</code> text (usually rendered in monospaced text), or ~~strikethrough~~ text (usually rendered with a line through text).</p>
+<p>You may use also <em>this</em> or <strong>this</strong> notation to emphatize text, and you can use all them <em><strong><code>together</code></strong></em> (and you can mix <code>*</code> and <code>_</code> )</p>
+<p>If you look at the source code you may note that
+even 
+if 
+you 
+break 
+the 
+lines,
+the text is kept together
+in a single paragraph</p>
+<p>Paragraphs are delimited by blank lines, leading and trailing spaces are removed </p>
+<p>You may force a line break with two spaces<br />
+or with a <code>\</code><br />
+at the end of the line</p>
+<h2>Images</h2>
+<p>Syntax for images is like the syntax for links, but with a <code>!</code> before:</p>
+<p><img src="https://raw.githubusercontent.com/agea/tutorial.md/master/img/1.png" alt="alt text" title="image title" /></p>
+<p><img src="https://raw.githubusercontent.com/agea/tutorial.md/master/img/2.png" alt="" /></p>
+<p><img src="https://raw.githubusercontent.com/agea/tutorial.md/master/img/3.png" alt="ref" /></p>
+<h2>Lists</h2>
+<p>To define a list of items, just put a <code>*</code>, a <code>-</code>, or a <code>+</code> at the start of the line of each item of the list followed by at least a space, to end the list, leave a blank line</p>
 <ul>
-<li>What are the keywords? </li>
-<li>What topic clusters can be built? </li>
-<li>Show me all the articles about cars. </li>
-<li>Show me all the articles about summer vacation. </li>
-<li>Show me all articles of type <strong>Interview</strong> that talk about <strong>Personal Finances.</strong></li>
+<li>red</li>
+<li>green</li>
+<li>blue</li>
 </ul>
-<h3>User-Level</h3>
-<p>We also need to build user profile clusters - so that we can address those users directly. Show me all the users that listened to articles about cars last month. Show me all the users that listened to <strong>interviews</strong> that contained “summer vacation”, but did not contain “planes”. Show me all the users interested in “dogs”, but not in “horses”.</p>
+<ul>
+<li>white</li>
+<li>grey</li>
+<li>black</li>
+</ul>
+<ul>
+<li>yellow</li>
+<li>pink</li>
+<li>orange</li>
+</ul>
+<p>You can also define numbered list, putting a number followed by a <code>.</code> or a <code>)</code> and a space at the start of the line (you may use any number, the first one is taken to start counting, then it will increment by one):</p>
+<ol start="3">
+<li></li>
+<li>you may leave blank items</li>
+</ol>
+<ol>
+<li>or start</li>
+<li>again</li>
+</ol>
+<p>You can insert any block inside a list, you have to respect the indentation of the text of the list item</p>
+<ul>
+<li>
+<p>A <em>paragraph</em> of text
+(spanning multiple lines),</p>
+<pre><code>fenced code,
+</code></pre>
+<pre><code>indented code (4 spaces + 2 spaces for the list 
+indentation, one blank line above, one below),
+</code></pre>
+<blockquote>
+<p>quotes,</p>
+</blockquote>
+<ul>
+<li>
+<p>another </p>
+<ul>
+<li>list
+<ul>
+<li>(and so on...),</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3>or headers</h3>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Headers</h2>
+<p>There are two ways to define headers:</p>
+<h1>The biggest possible header</h1>
+<h1>You can also use this markup</h1>
+<p>(I prefer the first one as it's more readable when looking directly at the source code)</p>
+<h2>A sub heading</h2>
+<h2>This is the alternative format</h2>
+<h3>Then you can go smaller</h3>
+<h4>And smaller</h4>
+<h5>And even smaller</h5>
+<h6>No, you can't go smaller than this</h6>
+<p>The good thing is that many tools that convert Markdown in HTML or PDF are able to generate the index of your document, or links to the headers automatically (like Github does on the <a href="http://git.io/vfz98">source</a> of Markdown files)</p>
+<h2>Horizontal rules</h2>
+<p>You can use horizontal rules to separate paragraphs: you may use three or more <code>*</code></p>
+<hr />
+<p>or three or more <code>_</code> (you may insert spaces before, after or between the characters, no other charachters are allowed)</p>
+<hr />
+<p>or three (or more) <code>-</code> </p>
+<hr />
+<p>but you have to be careful as it is similar to the header syntax, so if you write <code>---</code> immediatly after a single line of text you get an header, either you have to leave a blank line before the <code>---</code>, or you put it after multiple lines of text</p>
+<h2>Source code</h2>
+<p>If you have to insert code in your document you have three choices:</p>
+<ol>
+<li>inline code like this: <code>*Hello* **world!**&quot;</code></li>
+<li>fenced code blocks (you may use <code>```</code> or <code>~~~</code> 
+as delimiters): </li>
+</ol>
+<pre><code class="language-markdown">*Hello* **world!**
+</code></pre>
+<ol start="3">
+<li>
+<p>indented code blocks
+<em>Hello</em> </p>
+<p><strong>world!</strong>
+You need to leave a blank linke after a paragraph and 2 blank lines after a list to start an indented code block (if you want the code to beout of the list), and you may insert the name of the language immediatly after the opening code fence (so some renderers may be able tohighlight the syntax of the language)
+Blockquotes</p>
+</li>
+</ol>
+<hr />
+<blockquote>
+<p>In this way you define a quoted block of text.
+You can skip the initial <code>&gt;</code> in intermediate lines 
+if you are in the same paragraph</p>
+<blockquote>
+<p>(you may nest levels)
+&gt; but you can't indent with more than 3 spaces</p>
+</blockquote>
+</blockquote>
+<h2>Entities</h2>
+<p>With the goal of making Markdown as HTML-agnostic as possible, all <a href="https://html.spec.whatwg.org/multipage/entities.json">valid HTML entities</a> are recognized and converted into unicode characters</p>
+<p>Named entities consist of <code>&amp;</code> + any of the valid HTML5 entity names + <code>;</code> </p>
+<p>Some examples:</p>
+<ul>
+<li><code>&amp;amp;</code> &amp; </li>
+<li><code>&amp;copy;</code> ©</li>
+<li><code>&amp;rarr;</code> →</li>
+</ul>
+<h2>Escaping</h2>
+<p>If you have to write something that would result in a Markdown vaild syntax, you can escape the first character of your expression (you may also escape any other punctuation character) with a <code>\</code></p>
+<p>*not emphasized*</p>
+<p>&lt;br/&gt; not a tag</p>
+<p>[not a link](/foo)</p>
+<p>`not code`</p>
+<p>1. not a list</p>
+<p>* not a list</p>
+<p># not a header</p>
+<p>[foo]: /url &quot;not a reference&quot;</p>
+<p>You may also escape the backslash itself \<em>like this</em></p>
+<h2>About</h2>
+<p>You can read the <a href="http://en.wikipedia.org/wiki/Markdown">Wikipedia</a> article, if you want more information about Markdown.</p>
+<p>There are several Markdown <em>flavours</em>, this tutorial is based on the <a href="http://commonmark.org">Commonmark</a> specification.</p>
+<p>You may want to read the full <a href="http://spec.commonmark.org/">Commonmark specification</a></p>
+<p>The source code for this tutorial is on <a href="https://github.com/agea/tutorial.md">Github</a></p>
+<h3>License</h3>
+<p>MIT - <a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></p>
 </body></head></html>
