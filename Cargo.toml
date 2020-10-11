@@ -1,0 +1,12 @@
+[package]
+name = "md2html"
+version = "0.1.0"
+authors = ["Andrey Esaulov <esaulov.andrey@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33.3"
+pulldown-cmark = "0.8.0"
+maud = "0.22.0"
