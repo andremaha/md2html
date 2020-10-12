@@ -12,7 +12,9 @@ fn wrap_in_html(s: &str, css: Option<&str>) -> String {
             head {
                 meta charset="utf-8";
                 @if let Some(s) = css {
-                    link rel="stylesheet" type="text/css" href=(s) {}
+                    link rel="stylesheet" type="text/css" href=(format!("markdown-css-themes/{}.css", s)) {}
+                } else {
+                    link rel="stylesheet" type="text/css" href="markdown-css-themes/foghorn.css" {}
                 }
                 body {
                     (maud::PreEscaped(s))
@@ -31,6 +33,7 @@ fn write_to_file(file: &str, contents: &str) -> std::io::Result<()> {
     Ok(())
 }
 
+
 fn main() {
     
     let clap = clap_app!( md2html => 
@@ -38,8 +41,9 @@ fn main() {
                             (author: "Andrey I. Esaulov")
                             (about: "Convert markdown into the best looking HTML you've ever seen.")
                             (@arg input: +required "Input markdown file.")
-                            (@arg wrap: -w "Wrap in html")
-                            (@arg css: --css +takes_value "Link to css")
+                            (@arg css: --css +takes_value "Name of your style. Available styles: avenir-white, foghorn")
+                            (@arg file: -f +takes_value "The name of the html file to store")
+                            (@arg debug: -d "Display additional debug information")
     )
     .get_matches();
 
@@ -50,17 +54,32 @@ fn main() {
     let parser = Parser::new(&infile);
     push_html(&mut res, parser.into_iter());
  
-    if clap.is_present("wrap") {
-        res = wrap_in_html(&res, clap.value_of("css"));
+    
+    res = wrap_in_html(&res, clap.value_of("css"));
+
+
+    if clap.is_present("debug") {
+        println!("{:?}", res);
     }
 
-    println!("{:?}", res);
+    let mut output_file = "";
+    match clap.value_of("file") {
+        Some(s) => {
+            output_file = s;
+        },
+        Error => { 
+            output_file = "output.html";
+        }
+    }
 
 
-    write_to_file("output.html", &res);
+    write_to_file(output_file, &res);
+
+
+   
     // open a file in a browser window
     Command::new("open")
-        .arg("output.html")
+        .arg(output_file)
         .output();
 
 }
