@@ -9,13 +9,7 @@ license = "MIT"
 keywords = ["cli", "markdown", "html"]
 
 [badges]
-
-# Appveyor: `repository` is required. `branch` is optional; default is `master`
-# `service` is optional; valid values are `github` (default), `bitbucket`, and
-# `gitlab`; `id` is optional; you can specify the appveyor project id if you
-# want to use that instead. `project_name` is optional; use when the repository
-# name differs from the appveyor project name.
-appveyor = { repository = "https://github.com/andremaha/md2html" branch = "main", service = "github" }
+appveyor = { repository = "https://github.com/andremaha/md2html", branch = "main", service = "github" }
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
