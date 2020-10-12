@@ -1,6 +1,6 @@
 [package]
 name = "md2html"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Andrey Esaulov <esaulov.andrey@gmail.com>"]
 edition = "2018"
 description = "CLI utility to convert markdown files into the most beautiful HTML you have ever seen."
