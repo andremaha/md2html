@@ -1,0 +1,3 @@
+[submodule "docs/markdown-css-themes"]
+	path = docs/markdown-css-themes
+	url = https://github.com/jasonm23/markdown-css-themes
