@@ -18,7 +18,7 @@ md2html input_file.md
 
 ## Available styles
 
-* avenir-white
+* [avenir-white](samples/avenir-white.html)
 * foghorn
 * markdown-alt
 * markdown
