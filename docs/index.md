@@ -35,7 +35,7 @@ md2html sample.md --css screen -f docs/samples/screen.html
 * [markdown7](https://andremaha.github.io/md2html/samples/markdown7.html)
 * [markdown8](https://andremaha.github.io/md2html/samples/markdown8.html)
 * [markdown9](https://andremaha.github.io/md2html/samples/markdown9.html)
-* [markdown10](https://andremaha.github.io/md2htmlsamples/markdown10.html)
+* [markdown10](https://andremaha.github.io/md2html/samples/markdown10.html)
 * [markdown-alt](https://andremaha.github.io/md2html/samples/markdown-alt.html)
 * [avenir-white](https://andremaha.github.io/md2html/samples/avenir-white.html)
 * [foghorn](https://andremaha.github.io/md2html/samples/foghorn.html)
