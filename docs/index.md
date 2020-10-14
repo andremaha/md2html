@@ -22,23 +22,22 @@ Generates a html file `docs/samples/screen.html` from a markdwon file `sample.md
 md2html sample.md --css screen -f docs/samples/screen.html
 ```
 
-![Screen Style in Use](https://andremaha.github.io/md2html/img/screen.png)
 
 ## Available styles
 
-* [markdown]((https://andremaha.github.io/md2html/samples/markdown.html)
-* [markdown1]((https://andremaha.github.io/md2html/samples/markdown1.html)
-* [markdown2]((https://andremaha.github.io/md2html/samples/markdown2.html)
-* [markdown3]((https://andremaha.github.io/md2html/samples/markdown3.html)
-* [markdown4]((https://andremaha.github.io/md2html/samples/markdown4.html)
-* [markdown5]((https://andremaha.github.io/md2html/samples/markdown5.html)
-* [markdown6]((https://andremaha.github.io/md2html/samples/markdown6.html)
-* [markdown7]((https://andremaha.github.io/md2html/samples/markdown7.html)
-* [markdown8]((https://andremaha.github.io/md2html/samples/markdown8.html)
-* [markdown9]((https://andremaha.github.io/md2html/samples/markdown9.html)
-* [markdown10]((https://andremaha.github.io/md2htmlsamples/markdown10.html)
-* [markdown-alt]((https://andremaha.github.io/md2html/samples/markdown-alt.html)
+* [markdown](https://andremaha.github.io/md2html/samples/markdown.html)
+* [markdown1](https://andremaha.github.io/md2html/samples/markdown1.html)
+* [markdown2](https://andremaha.github.io/md2html/samples/markdown2.html)
+* [markdown3](https://andremaha.github.io/md2html/samples/markdown3.html)
+* [markdown4](https://andremaha.github.io/md2html/samples/markdown4.html)
+* [markdown5](https://andremaha.github.io/md2html/samples/markdown5.html)
+* [markdown6](https://andremaha.github.io/md2html/samples/markdown6.html)
+* [markdown7](https://andremaha.github.io/md2html/samples/markdown7.html)
+* [markdown8](https://andremaha.github.io/md2html/samples/markdown8.html)
+* [markdown9](https://andremaha.github.io/md2html/samples/markdown9.html)
+* [markdown10](https://andremaha.github.io/md2htmlsamples/markdown10.html)
+* [markdown-alt](https://andremaha.github.io/md2html/samples/markdown-alt.html)
 * [avenir-white](https://andremaha.github.io/md2html/samples/avenir-white.html)
 * [foghorn](https://andremaha.github.io/md2html/samples/foghorn.html)
-* [screen]((https://andremaha.github.io/md2html/samples/screen.html)
-* [swiss]((https://andremaha.github.io/md2html/samples/swiss.html)
+* [screen](https://andremaha.github.io/md2html/samples/screen.html)
+* [swiss](https://andremaha.github.io/md2html/samples/swiss.html)
