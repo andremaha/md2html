@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# md2html
 
-You can use the [editor on GitHub](https://github.com/andremaha/md2html/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+CLI utility to convert markdown files into the most beautiful HTML you have ever seen.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+cargo install md2html
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage
 
-### Jekyll Themes
+Generates a file output.html with the default stylesheet and opens it in a browser.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/andremaha/md2html/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+md2html input_file.md 
+```
 
-### Support or Contact
+## Available styles
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* avenir-white
+* foghorn
+* markdown-alt
+* markdown
+* markdown1
+* markdown10
+* markdown2
+* markdown3
+* markdown4
+* markdown5
+* markdown6
+* markdown7
+* markdown8
+* markdown9
+* screen
+* swiss
