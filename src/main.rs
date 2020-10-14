@@ -12,9 +12,9 @@ fn wrap_in_html(s: &str, css: Option<&str>) -> String {
             head {
                 meta charset="utf-8";
                 @if let Some(s) = css {
-                    link rel="stylesheet" type="text/css" href=(format!("https://raw.githubusercontent.com/jasonm23/markdown-css-themes/gh-pages/{}.css", s)) {}
+                    link rel="stylesheet" type="text/css" href=(format!("https://andremaha.github.io/md2html/css/{}.css", s)) {}
                 } @else {
-                    link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/jasonm23/markdown-css-themes/gh-pages/foghorn.css" {}
+                    link rel="stylesheet" type="text/css" href="https://andremaha.github.io/md2html/css/foghorn.css" {}
                 }
                 body {
                     (maud::PreEscaped(s))
